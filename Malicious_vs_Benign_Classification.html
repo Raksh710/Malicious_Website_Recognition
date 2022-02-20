@@ -17014,7 +17014,7 @@ weighted avg       0.93      0.92      0.93       356
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[66]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[89]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">cb_cv_f1</span> <span class="o">=</span> <span class="n">cross_validate</span><span class="p">(</span><span class="n">cb</span><span class="p">,</span><span class="n">X_test</span><span class="p">,</span><span class="n">y_test</span><span class="p">,</span><span class="n">cv</span><span class="o">=</span><span class="n">StratifiedKFold</span><span class="p">(</span><span class="n">n_splits</span><span class="o">=</span><span class="mi">5</span><span class="p">,</span><span class="n">shuffle</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span><span class="n">random_state</span><span class="o">=</span><span class="mi">42</span><span class="p">),</span><span class="n">scoring</span><span class="o">=</span><span class="n">scoring</span><span class="p">)</span>
@@ -17039,25 +17039,25 @@ weighted avg       0.93      0.92      0.93       356
 
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
 <pre>Learning rate set to 0.006019
-0:	learn: 0.6857393	total: 9.25ms	remaining: 9.24s
-500:	learn: 0.1806446	total: 3.62s	remaining: 3.6s
-999:	learn: 0.1018346	total: 7.14s	remaining: 0us
+0:	learn: 0.6857393	total: 13.3ms	remaining: 13.3s
+500:	learn: 0.1806446	total: 3.52s	remaining: 3.51s
+999:	learn: 0.1018346	total: 7.09s	remaining: 0us
 Learning rate set to 0.006028
-0:	learn: 0.6866775	total: 6.18ms	remaining: 6.18s
-500:	learn: 0.1822175	total: 3.44s	remaining: 3.42s
-999:	learn: 0.1087319	total: 6.92s	remaining: 0us
+0:	learn: 0.6866775	total: 9.24ms	remaining: 9.23s
+500:	learn: 0.1822175	total: 3.62s	remaining: 3.6s
+999:	learn: 0.1087319	total: 7.25s	remaining: 0us
 Learning rate set to 0.006028
-0:	learn: 0.6867839	total: 6.48ms	remaining: 6.47s
-500:	learn: 0.1680272	total: 3.69s	remaining: 3.67s
-999:	learn: 0.0988092	total: 7.54s	remaining: 0us
+0:	learn: 0.6867839	total: 7.01ms	remaining: 7s
+500:	learn: 0.1680272	total: 4.01s	remaining: 3.99s
+999:	learn: 0.0988092	total: 7.61s	remaining: 0us
 Learning rate set to 0.006028
-0:	learn: 0.6867894	total: 6.71ms	remaining: 6.7s
-500:	learn: 0.1909167	total: 3.61s	remaining: 3.6s
-999:	learn: 0.1079882	total: 7.3s	remaining: 0us
+0:	learn: 0.6867894	total: 6.34ms	remaining: 6.33s
+500:	learn: 0.1909167	total: 3.88s	remaining: 3.87s
+999:	learn: 0.1079882	total: 7.12s	remaining: 0us
 Learning rate set to 0.006028
-0:	learn: 0.6872671	total: 6.03ms	remaining: 6.02s
-500:	learn: 0.1850676	total: 3.55s	remaining: 3.53s
-999:	learn: 0.1092527	total: 7.36s	remaining: 0us
+0:	learn: 0.6872671	total: 6.52ms	remaining: 6.51s
+500:	learn: 0.1850676	total: 3.43s	remaining: 3.42s
+999:	learn: 0.1092527	total: 6.92s	remaining: 0us
 </pre>
 </div>
 </div>
@@ -17069,7 +17069,7 @@ Learning rate set to 0.006028
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[67]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[90]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot; ACCURACY: </span><span class="si">{</span><span class="n">cb_cv_f1</span><span class="p">[</span><span class="s1">&#39;test_accuracy&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
@@ -17110,7 +17110,7 @@ Learning rate set to 0.006028
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[68]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[91]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">cb_pred</span> <span class="o">=</span> <span class="n">cb</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">X_test</span><span class="p">)</span> <span class="c1"># predicting on the hold out test set</span>
@@ -17124,11 +17124,14 @@ Learning rate set to 0.006028
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[69]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[92]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">classification_report</span><span class="p">(</span><span class="n">y_test</span><span class="p">,</span><span class="n">cb_pred</span><span class="p">))</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">confusion_matrix</span><span class="p">(</span><span class="n">y_test</span><span class="p">,</span><span class="n">cb_pred</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">precision_score</span><span class="p">(</span><span class="n">y_test</span><span class="p">,</span><span class="n">cb_pred</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">recall_score</span><span class="p">(</span><span class="n">y_test</span><span class="p">,</span><span class="n">cb_pred</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">f1_score</span><span class="p">(</span><span class="n">y_test</span><span class="p">,</span><span class="n">cb_pred</span><span class="p">))</span>
 </pre></div>
 
      </div>
@@ -17159,6 +17162,9 @@ weighted avg       0.95      0.95      0.95       356
 
 [[292  12]
  [  7  45]]
+0.7894736842105263
+0.8653846153846154
+0.8256880733944955
 </pre>
 </div>
 </div>
@@ -17185,6 +17191,11 @@ weighted avg       0.95      0.95      0.95       356
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <h3 id="Catboost-Classifier-is-the-best-optimal-model-for-our-data-as-it-is-quite-robust,-immune-to-multicollinearity-and-has-high-recall-and-F-1-score">Catboost Classifier is the best optimal model for our data as it is quite robust, immune to multicollinearity and has high recall and F-1 score<a class="anchor-link" href="#Catboost-Classifier-is-the-best-optimal-model-for-our-data-as-it-is-quite-robust,-immune-to-multicollinearity-and-has-high-recall-and-F-1-score">&#182;</a></h3>
+</div>
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h3 id="Recall:-0.8653">Recall: 0.8653<a class="anchor-link" href="#Recall:-0.8653">&#182;</a></h3><h3 id="Precision:-0.7894">Precision: 0.7894<a class="anchor-link" href="#Precision:-0.7894">&#182;</a></h3><h3 id="F-1-Score:-0.8256">F-1 Score: 0.8256<a class="anchor-link" href="#F-1-Score:-0.8256">&#182;</a></h3>
 </div>
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
